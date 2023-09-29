@@ -23,9 +23,20 @@ public class JobTest {
         Job newJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
         assertEquals(newJob.getName(), "Product tester");
+      //  assertTrue(validJob.getEmployer() instanceof Employer);
         assertTrue(newJob.getEmployer().getValue() == ("ACME"));
         assertTrue(newJob.getLocation().getValue() == ("Desert"));
         assertTrue(newJob.getPositionType().getValue() == ("Quality control"));
         assertTrue(newJob.getCoreCompetency().getValue() == ("Persistence"));
     }
+
+    @Test
+    public void testJobsForEquality () {
+        Job equalityJob1 = new Job();
+        Job equalityJob2 = new Job();
+
+        assertFalse(equalityJob1.equals(equalityJob2));
+
+    }
 }
+
