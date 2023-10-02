@@ -50,8 +50,7 @@ public class JobTest {
 
         newLineJob.toString().startsWith(System.lineSeparator());
         newLineJob.toString().endsWith(System.lineSeparator());
-//        assertEquals(System.lineSeparator() , newLineJob.toString());
-//        assertEquals(System.lineSeparator(), newLineJob.toString());
+
 
     }
     @Test
