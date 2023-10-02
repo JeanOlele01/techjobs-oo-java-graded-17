@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Employer extends JobField{
 
-//    private int ;
+//    private int id ;
 //    private static int nextId = 1;
 //    private String value;
 
